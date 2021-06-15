@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+.navbar-nav .nav-link {
+    color: #204f87;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.banner{
+    background-image: url(../images/banner.png);
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.banner h1{
+    color: #fff;
+    font-size: 65px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.icon{
+position: absolute;
+color: #fff;
+font-size: 30px;
+left: 50%;
+top: 80%;
+transform: translate(-50%, 0);
+animation: updown 2s linear infinite;
+animation-direction: alternate;
+}
+@keyframes updown{
+    0%{
+        top: 80%;
+    }
+    100%{
+        top: 85%;
+    }
+}
+.who_we_are{
+padding: 80px 0;
+    
+}
+.who_we_are p{
+    color: #bab5b2;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+.heading span{
+    margin-bottom: 15px;
+display: inline-block;
+width: 0;
+height: 3px;
+background-color: #e76128;
+transition: .5s all ease-in-out;
+}
+.heading h1{
+color: #28377e;
+font-size:36px;
+text-transform: uppercase;
+font-weight: 600;
+font-family: 'Montserrat', sans-serif;
+
+}
+.who_we_are:hover .heading span{
+    width: 50px;
+}
+.what_we_do{
+    margin-top: 70px 0;
+    background-color:#fbfbfb;
+background-image: url(../images/item_banner.png);
+width: 100%;
+background-position: right bottom;
+
+background-size: 295vh;
+
+background-repeat: no-repeat;
+}
+.heading2 span{
+    margin-top: 70px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 0;
+    height: 4px;
+    background-color: #e76128;
+    transition: .5s all ease-in-out;
+}
+.heading2 h1{
+    margin-bottom: 30px;
+    color: #28377e;
+    font-size:36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.what_we_do:hover .heading2 span{
+    width: 50px;
+}
+.item{
+    width: 100%;
+    padding-bottom: 100px;
+}
+.image{
+    position:relative; 
+}
+.image img{
+    width: 100%;
+  
+}
+.image::before{
+    content: '';
+    position: absolute;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#28377e+0,28377e+100&0+27,1+100 */
+background: -moz-linear-gradient(top,  rgba(40,55,126,0) 0%, rgba(40,55,126,0) 27%, rgba(40,55,126,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(40,55,126,0) 0%,rgba(40,55,126,0) 27%,rgba(40,55,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(40,55,126,0) 0%,rgba(40,55,126,0) 27%,rgba(40,55,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0028377e', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ height: 0%;
+
+ transition: 0.6s all ease-in-out;
+ opacity: 0.5;
+}
+.image:hover::before{
+    height: 100%;
+}
+.image h1{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+    font-weight: 700;
+    transition: 0.6s all ease-in-out;
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+.image:hover h1{
+    top: 45%;
+    opacity: 1;
+    width: 100%;
+}
+.image .side-arrow{
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    transform: translate(-50%);
+    color: #fff;
+    font-size: 45px;
+    transition: 0.6s all ease-in-out;
+    opacity: 0;
+    animation: long-arrow .8s linear infinite;
+    animation-direction: alternate;
+}
+.image:hover .side-arrow{
+    left: 50%;
+    opacity: 1;
+    animation: long-arrow .8s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes long-arrow{
+    0%{
+        left: 53%;
+    }
+    100%{
+        left: 47%;
+    }
+}
+.our_attorney{
+    margin-bottom: 70px 0;
+    background-color:#fbfbfb;
+background-image: url(../images/profile_bg.png);
+width: 100%;
+background-position: center;
+
+background-size: 295vh;
+
+background-repeat: no-repeat;
+padding: 50px;
+}
+.our_attorney h1{
+    color:#fff;
+}
+.our_attorney p{
+    color: #a3a0cc;
+}
+.btn-attorney{
+    color: #e76128;
+    text-transform: uppercase;
+}
+.our_attorney:hover .heading span{
+    width: 50px;
+}
+.our_attorney .item2{
+    margin-bottom: 20px;
+}
+
+
+
+.language_section:hover span{
+    width: 81px;
+}
+.languag{
+
+padding-bottom: 155px;
+}
+.languag h3 {
+    color: #33417c;
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 13px;
+}
+.languag p{color: #bab5b2;font-size: 15px;line-height: 26px;padding-bottom: 10px;font-weight: 500;}
+.languag a{
+    
+color: #e76128;
+    
+text-transform: uppercase;
+    
+font-weight: 700;
+transition: .25s all ease-in-out;
+    
+text-decoration: none;
+}
+.languag a:hover{
+    color: #e78e28;
+}
+.contact-part{
+    background-color: #36226f;
+}
+.contact-part:hover .contact span{
+    width: 75px;
+}
+
+.contact h1{
+    color: #fff;
+    padding: 11px 0 70px;
+}
+form{
+    text-align: center;
+    caret-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    margin-bottom: 25px;
+    color: #fff;
+    padding: 14px 0;
+    font-weight: 500;
+    transition: .3s all;
+}
+form .underline{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 52px;
+    left: 0;
+    background-color: #564a98;
+}
+form .underline::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #e77e28;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: .3s transform ease;
+}
+form input:focus + .underline::after{
+    transform: scaleX(1);
+}
+form .underline2{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 130px;
+    left: 0;
+    background-color: #564a98;
+}
+form .underline2::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #e77e28;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: .3s transform ease;
+}
+form input:focus + .underline2::after{
+    transform: scaleX(1);
+}
+textarea{
+    width: 100%;
+    background: transparent;
+    border: none;
+    margin-bottom: 51px;
+    color: #fff;
+    padding: 14px 0;
+    resize: none;
+    font-weight: 500;
+}
+form .underline3{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 207px;
+    left: 0;
+    background-color: #564a98;
+}
+form .underline3::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #e77e28;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: .3s transform ease;
+}
+form textarea:focus + .underline3::after{
+    transform: scaleX(1);
+}
+
+input[type="submit"]{
+    width: 30%;
+    color: white;
+    height: 50px;
+    background: #E76128;
+    border: 1px solid #E76128;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 78px;
+    transition: .25s;
+}
+input[type="submit"]:hover{
+    background: #ca4e19;
+}
+
+input:focus-visible{
+    outline: none;
+}
+textarea:focus-visible{
+    outline: none;
+}
+::placeholder{
+    color: #fff;
+}
+
+footer{
+    background-color: #16102b;
+    min-height: 13vh;
+}
+footer p{
+    color: #6c65a0;
+    font-weight: 500;
+    
+}
+.icons{
+
+color: #C1BDDB;
+}
+.icons a{
+    
+color: #C1BDDB;
+    
+margin: 0 14px;
+
+}
+.fa-facebook-square{
+    transition: .25s all;
+}
+.fa-linkedin-in{
+    transition: .25s all;
+}
+.fa-youtube{
+    transition: .25s all;
+}
+.fa-instagram{
+    transition: .25s all;
+}
+.fa-pinterest-p{
+    transition: .25s all;
+}
+.fa-facebook-square:hover{
+   color: #1877f2;
+}
+.fa-linkedin-in:hover{
+    color: #0e76a8;
+}
+.fa-youtube:hover{
+    color:  #c4302b;
+}
+.fa-instagram:hover{
+    color: #fccc63;
+}
+.fa-pinterest-p:hover{
+    color: #c8232c;
+}
